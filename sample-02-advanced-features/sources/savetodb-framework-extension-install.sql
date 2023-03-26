@@ -1,8 +1,8 @@
 -- =============================================
 -- SaveToDB Framework Extension for PostgreSQL
--- Version 10.6, December 13, 2022
+-- Version 10.8, January 9, 2023
 --
--- Copyright 2022 Gartle LLC
+-- Copyright 2022-2023 Gartle LLC
 --
 -- License: MIT
 -- =============================================
@@ -307,7 +307,7 @@ END IF;
 END
 $$;
 
-INSERT INTO xls.handlers (table_schema, table_name, column_name, event_name, handler_schema, handler_name, handler_type, handler_code, target_worksheet, menu_order, edit_parameters) VALUES ('xls', 'savetodb_framework_extension', 'version', 'Information', NULL, NULL, 'ATTRIBUTE', '10.4', NULL, NULL, NULL);
+INSERT INTO xls.handlers (table_schema, table_name, column_name, event_name, handler_schema, handler_name, handler_type, handler_code, target_worksheet, menu_order, edit_parameters) VALUES ('xls', 'savetodb_framework_extension', 'version', 'Information', NULL, NULL, 'ATTRIBUTE', '10.8', NULL, NULL, NULL);
 
 INSERT INTO xls.handlers (table_schema, table_name, column_name, event_name, handler_schema, handler_name, handler_type, handler_code, target_worksheet, menu_order, edit_parameters) VALUES ('xls', 'view_columns', NULL, 'Actions', 'xls', 'Developer Guide', 'HTTP', 'https://www.savetodb.com/dev-guide/xls-columns.htm', NULL, 13, NULL);
 INSERT INTO xls.handlers (table_schema, table_name, column_name, event_name, handler_schema, handler_name, handler_type, handler_code, target_worksheet, menu_order, edit_parameters) VALUES ('xls', 'view_formats', NULL, 'Actions', 'xls', 'Developer Guide', 'HTTP', 'https://www.savetodb.com/dev-guide/xls-formats.htm', NULL, 13, NULL);
